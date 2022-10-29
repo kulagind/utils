@@ -8,3 +8,12 @@ func Contains(target []string, value string) bool {
 	}
 	return false
 }
+
+func ContainsInt(target []int, value int) bool {
+	for _, v := range target {
+		if v == value {
+			return true
+		}
+	}
+	return false
+}
